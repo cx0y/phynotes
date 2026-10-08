@@ -1,0 +1,170 @@
+\documentclass{article}[12pt, a4paper]
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+% \usepackage{lipsum} % For dummy text
+\usepackage{xcolor}
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{} % Clear headers and footers
+\renewcommand{\headrulewidth}{0pt} % <-- THIS REMOVES THE ANNOYING TOP LINE
+\fancyfoot[R]{\textbf{\color{black}em-set-01}}
+
+
+
+\begin{document}
+
+% \centering \section*{Quantum Mechanics}
+
+\centering \textbf{(Basics Quantum Mechancis)}
+%% Questions
+\begin{enumerate}
+\item Write down the condition for Orthonormality!
+\item Write down the operators for this quantities: $x, p, \hat{H}, E, T, V, L$ \\
+($L$ is angular momentum here)
+\item Write downt the formulas for: Probability $P(x, t)$, Probability Current Deisnty $J(x)$
+Expectation value $\langle f(x) \rangle$ of any function $f(x)$ over a range $(a, b)$
+\item Write down the expression for the expectation values of the following quantities
+\item Write down uncertinity princple related to $x, p$ and $E, t$
+\end{enumerate}
+
+% Basic Quantum Mechanics Problems
+\centering \textbf{(Problems)}
+\begin{enumerate}
+%% Q1
+\item A gaussian distribution is given $\rho(x) = A e^{-\lambda (x - a)^2}$ where $A, a$ and $\lambda$ are positive and real constatnts, Find $A$, and then calculate $\langle x \rangle, \langle x^2 \rangle $ and $\sigma$, and sketch the graph of $\rho (x)$
+
+%% Q2
+\item At a time $t = 0$, wave function of a particle
+$$
+\psi (x, 0) =
+\begin{cases}
+	A \frac{x}{a} & \text{if } 0 \le x \le a, \\
+	A \frac{(b - a)}{b - a} & \text{if } a \ge x \ge b, \\
+	0 & \text{otherwise}
+
+\end{cases}$$
+\begin{enumerate}
+	\item Normalize $\psi$
+	\item Sketch $\psi(x, 0)$, as function of $x$
+\end{enumerate}
+
+%% Q3
+\item Consider the wave function $$\Psi(x,t) = Ae^{-\lambda |x|}e^{-i\omega t}$$
+where $A, a$ and $b$ are constants
+\begin{enumerate}
+	\item Normalize $\Psi$
+	\item Determine the expetcation values of $x, x^2$
+\end{enumerate}
+
+%% Q4
+\item The neddle on a broken speedometer is free to swing, and bounces perfectly off the pins at
+either end, so that if you give it a flick it is equally likely to come to rest at any angle between $0$ and $\pi$.
+\begin{enumerate}
+	\item What is the probability density $\rho(\theta)$ ? \textbf{Hint:} $\rho(\theta)d\theta$ is the
+	is the probability that the needle will come to rest between $\theta$ and $\theta+d\theta$.
+	Graph $\rho(\theta)$ as a function of $\theat$ between $(-\pi/2, 3\pi/2)$ (Of course, part of this interveal excluded
+	so $\rho$ is zero there.) Make sure that the total probability is $1$
+	\item Compute $\langle \theta \rangle, \langle x^2 \rangle$ and $\sigma$ for this distribution
+	\item Compute $\langle sin(\theta) \rangle, \langle cos(\theta) \rangle, \langle cos^2(\theta) \rangle$
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+\textbf{(One Dimentional Potentials)}
+\begin{enumerate}
+
+%% Stationary States
+\item Start with General schrodinger equation,
+$$\frac{-\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \Psi(x, t) + V(x) \Psi(x, t)= -i \hbar \frac{\partial}{\partial t} \Psi(x, t)$$ \\
+Show that for Stationary state solution (fixed $E$ state), general linear solution of the equation is
+$$\Psi(x, t) = \sum_n C_n \psi_n(x)exp({\frac{-i E_n t}{\hbar}})$$
+\begin{enumerate}
+    \item Write down the \textbf{Fourier's trick} to obtain $C_n$ for $nth$ energy state.
+    \item Show that for Stationary state, probability density $\mathbf{P}$ independent of time $t$.
+	\item Show that for Stationary States flactuation of energy ($E$) is $\sigma_{\hat{H}} = 0$
+\end{enumerate}
+
+% Infinify potential Wall
+\item Solve \textbf{TISE} for the potential given
+$$
+V(x) =
+\begin{cases}
+0 & \text{if } 0 \le x \le a \\
+\infty & \text{otherwise}
+\end{cases}$$
+\begin{enumerate}
+ \item Show that total normalized solution is $\psi(x) = \displaystyle\mathbf{\sum_n} C_n \sqrt{\frac{2}{a}} \sin \displaystyle(\frac{\displaystyle n\pi x}{\displaystyle a}\displaystyle)$
+ \item Find the expression of energy of $nth$ state $E_n$.
+ \item Find $C_n$ using \textbf{Fourier's trick}, wirte down the expression.
+\end{enumerate}
+
+% Potential Barrier
+\item Solve \textbf{TISE} for the potential given (Potential Step)
+$$
+V(x) =
+\begin{cases}
+0 & \text{if }  x \le 0 \\
+V_o & \text{if } x \ge 0 \\
+\end{cases}$$
+\begin{enumerate}
+    \item Sketch the potential $V(x)$ for case $(E > V_o)$ and $(V_o > E)$.
+	\item For $(E > V_o)$ case solve the \textbf{TISE} and write down the valid solutions and boundary conditions.
+	\item For $(E > V_o)$ show that, $T + R = 1$ (where $T$ is the transmission cofficient and $R$ is the reflection cofficient).
+	\item Show that when $V_o \gg E$, then $R = 1, T = 0$.
+	\item Show that for $(V_o > E)$, transmission cofficient $J_{trans} = 0$, and hence show that
+	reflection cofficient $R = 0$
+\end{enumerate}
+
+% Potential Barrier
+\item For the given one dimentional potential
+$$
+V(x) =
+\begin{cases}
+0 & \text{if }  x \le 0 \\
+V_o & \text{if } 0 < x < a \\
+0 & \text{if }  x \ge a \\
+\end{cases}$$
+\begin{enumerate}
+   \item Sketch the potential $V(x)$ for case $(E > V_o)$ and $(V_o > E)$ and write down the \textbf{boundary conditions}.
+   \item
+\end{enumerate}
+\end{enumerate}
+
+% One Dimentional Potential Problems
+\centering \textbf{(Problems)}
+\begin{enumerate}
+
+\item Solve the time independent Schroedinger Equation with appropiate boundary conditions
+for infinity square well potential, centered at the origin [$V(x) = 0$ for $x \in (-a/2, a/2)$ and $V = \infty$ otherwise]
+Calculate $\langle x \rangle, \langle x^2 \rangle, \langle p \rangle, \langle p^2 \rangle, \sigma_x$ and $\sigma_p$,
+for it's $n^{th}$ stationary state. Check the \textbf{uncertinity principle} is satisfied. Which state
+comes close to the uncertinity limit?
+
+\item Consider the double delta function potential $$V(x) = -\alpha[\delta(x + a) + \delta(x - a)],$$
+where $\alpha, a$ constant.
+\begin{enumerate}
+	\item Sketch the potential
+	\item How many bound state does it possess? Find the allowed energies for, $\alpha = \hbar^2/ma$ and for
+	$\alpha = \hbar^2/4ma$, and sketch the wave functions
+	\item Find the transmission cofficient for this potential.
+ \end{enumerate}
+
+\end{enumerate}
+
+
+\centering \textbf{(3 Dimentional Potential Problems)}
+\begin{enumerate}
+\item Write down
+
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{document}

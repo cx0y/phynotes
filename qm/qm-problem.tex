@@ -1,0 +1,83 @@
+\documentclass{article}[12pt, a4paper]
+% \documentclass{article}[12pt, letterpaper]
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+	\textbf{Problems: Basic Quantum Mechancis and It's application}
+\end{center}
+\begin{enumerate}
+
+%% Q1
+\item A gaussian distribution is given $\rho(x) = A e^{-\lambda (x - a)^2}$ where $A, a$ and $\lambda$ are positive and real constatnts, Find $A$, and then calculate $\langle x \rangle, \langle x^2 \rangle $ and $\sigma$, and sketch the graph of $\rho (x)$
+
+%% Q2
+\item At a time $t = 0$, wave function of a particle
+$$
+\psi (x, 0) =
+\begin{cases}
+	A \frac{x}{a} & \text{if } 0 \le x \le a, \\
+	A \frac{(b - a)}{b - a} & \text{if } a \ge x \ge b, \\
+	0 & \text{otherwise}
+
+\end{cases}$$
+\begin{enumerate}
+	\item Normalize $\psi$
+	\item Sketch $\psi(x, 0)$, as function of $x$
+\end{enumerate}
+
+%% Q3
+\item Consider the wave function $$\Psi(x,t) = Ae^{-\lambda |x|}e^{-i\omega t}$$
+where $A, a$ and $b$ are constants
+\begin{enumerate}
+	\item Normalize $\Psi$
+	\item Determine the expetcation values of $x, x^2$
+\end{enumerate}
+
+%% Q4
+\item The neddle on a broken speedometer is free to swing, and bounces perfectly off the pins at
+either end, so that if you give it a flick it is equally likely to come to rest at any angle between $0$ and $\pi$.
+\begin{enumerate}
+	\item What is the probability density $\rho(\theta)$ ? \textbf{Hint:} $\rho(\theta)d\theta$ is the
+	is the probability that the needle will come to rest between $\theta$ and $\theta+d\theta$.
+	Graph $\rho(\theta)$ as a function of $\theat$ between $(-\pi/2, 3\pi/2)$ (Of course, part of this interveal excluded
+	so $\rho$ is zero there.) Make sure that the total probability is $1$
+	\item Compute $\langle \theta \rangle, \langle x^2 \rangle$ and $\sigma$ for this distribution
+	\item Compute $\langle sin(\theta) \rangle, \langle cos(\theta) \rangle, \langle cos^2(\theta) \rangle$
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+\hline \\
+%% 1D Potential's Parts
+\begin{center}
+	\textbf{Quantum Mechanics: Application in 1D Potentials}
+\end{center}
+
+\begin{enumerate}
+
+\item Solve the time independent Schroedinger Equation with appropiate boundary conditions
+for infinity square well potential, centered at the origin [$V(x) = 0$ for $x \in (-a/2, a/2)$ and $V = \infty$ otherwise]
+Calculate $\langle x \rangle, \langle x^2 \rangle, \langle p \rangle, \langle p^2 \rangle, \sigma_x$ and $\sigma_p$,
+for it's $n^{th}$ stationary state. Check the \textbf{uncertinity principle} is satisfied. Which state
+comes close to the uncertinity limit?
+
+\item Consider the double delta function potential $$V(x) = -\alpha[\delta(x + a) + \delta(x - a)],$$
+where $\alpha, a$ constant.
+\begin{enumerate}
+	\item Sketch the potential
+	\item How many bound state does it possess? Find the allowed energies for, $\alpha = \hbar^2/ma$ and for
+	$\alpha = \hbar^2/4ma$, and sketch the wave functions
+	\item Find the transmission cofficient for this potential.
+ \end{enumerate}
+
+\end{enumerate}
+
+
+
+\end{document}

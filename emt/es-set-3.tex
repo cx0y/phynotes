@@ -1,0 +1,51 @@
+\documentclass{article}[12pt, a4paper]
+\title{Electrostatics}
+\usepackage{amsmath}
+\usepackage{esint} % Required for \oiint and \oiiint
+\usepackage{hyperref} %document outline
+\usepackage{fancyhdr}
+% \usepackage{lipsum} % For dummy text
+\usepackage{xcolor}
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{} % Clear headers and footers
+\renewcommand{\headrulewidth}{0pt} % <-- THIS REMOVES THE ANNOYING TOP LINE
+\fancyfoot[R]{\textbf{\color{black}em-set-03}}
+\newcommand{\gfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+
+\begin{document}
+\centering \textbf{(Potential Problems)}
+\begin{enumerate}
+
+
+% Q1
+\item A rectangular pipe, running parallel to the $z$-axis (from $-\infty$ to $+\infty$),
+has three grounded metal sides, at $y = 0, y = a$, and $x = 0$. The fourth side, at
+$x = b$, is maintained at a speciﬁed potential $V_0(y)$.
+\begin{enumerate}
+	\item Develop general formula for the potential inside the pipe.
+    \item Find the potential explicitely for the, $V(y) = V_o$ (Constant).
+\end{enumerate}
+
+% Q2
+\item A spherical shell with given potential $V_o(R, \theta) = kcos3\theta$ (at radius $r = R$, where $k$ is a constant).
+\begin{enumerate}
+	\item Find the potential inside the shell.
+	\item Find the potential outside the shell.
+	\item Calculate the total induced surface charge density $\sigma(\theta)$ in the shell.
+\end{enumerate}
+
+% Q3
+\item Suppose the potential $V(\theta)$ at the surface of a sphere is speciﬁed,
+and there is no charge inside or outside the sphere. Show that the charge density on
+the sphere is given by,
+$$
+\sigma(\theta) = \gfrac{\epsilon_o}{2R}\sum_{l = 0}^{\infty}(2l + 1)^2C_lP_l(\cos\theta)
+$$ where
+$$
+C_l = \int^{\pi}_{0} V_o(\theta) P_l(\cos\theta) \sin(\theta) d\theta$$
+
+
+\end{enumerate}
+\end{document}

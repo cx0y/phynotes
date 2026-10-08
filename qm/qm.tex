@@ -1,0 +1,71 @@
+\documentclass{article}[12pt, a4paper]
+\usepackage{amsmath}
+\usepackage{esint} % Required for \oiint and \oiiint
+\usepackage{hyperref}
+\newcommand{\gfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\begin{document}
+% \tableofcontents
+% \newpage
+\centering \section*{Core: Quantum Mechanics Formulations}
+
+%% Schrodinger Equation
+\textbf{Schrodinger Equation}
+$$\boxed{\frac{-\hbar^2}{2m} \mathbf{\nabla^2} \psi(\mathbf{r}.t) = i\hbar \frac{\partial}{\partial t} \psi(\mathbf{r}.t)} \textbf{ (TDSE)}$$
+$$\boxed{\hat{\mathbf{H}} \psi(\mathbf{r}.t) = i\hbar \frac{\partial}{\partial t} \psi(\mathbf{r}.t)} \textbf{ (TDSE)}$$
+$$\boxed{\hat{\mathbf{H}} \psi(\mathbf{r}.t) = E \psi(\mathbf{r}.t)} \textbf{ (TISE)}$$ \\
+
+%% Nature of Psi
+\textbf{The Wave Funtion}
+$$\boxed{\rho (\mathbf{r}, t) = \psi(\mathbf{r}.t)^\mathbf{*} \psi(\mathbf{r}.t) =  {|\psi(\mathbf{r}.t)|}^2} \textbf{ (Probability Density)}$$
+$$\boxed{ \int_{-\infty}^{\infty} \rho (\mathbf{r}, t) \mathrm{d}\mahtbf{\tau} = 1} \textbf{ (Normalization Condition)}$$
+
+\centering \section*{Aplication: One Dimentional Potentials}
+
+%% One dimetional infinity potential well
+\textbf{Infinify Potential Well}
+$$
+\boxed{
+V(x) =
+\begin{cases}
+	0 & \text{if } 0 \le x \le a \\
+	\infty & \text{Otherwse}
+\end{cases}
+} \text{ (Potential)}
+$$
+$$
+% \boxed{
+% \begin{aligned}
+% \psi(0) = \psi (a)  \\
+% \\
+% \gfrac{\partial \psi(x)}{\partial x}\big|_{x=0} = \gfrac{\partial \psi(x)}{\partial x}\big|_{x=a}
+% \end{aligned}
+% } \textbf{ (Bonudary Conditions)}
+\boxed{
+\psi(0) = \psi (a) \quad : \quad
+\gfrac{\partial \psi(x)}{\partial x}\big|_{x=0} = \gfrac{\partial \psi(x)}{\partial x}\big|_{x=a}
+} \textbf{ (Bonudary Conditions)}
+$$
+$$
+\boxed{}
+$$
+
+%% Appendex A
+\section*{Appendex A: Probability}
+Say, I room having peoples with different age, and $N(j)$ representing number of people with age $j$,
+(Eg: if $3$ people with age $25$, then $N(25) = 3$)
+
+$$\boxed{N = \sum N(j)} \text{ (Total number of peopele in the room)}$$
+$$\boxed{P(j) = \gfrac{N(j)}{N}} \text{ (Probabiliy of getting age $j$)}$$
+$$\boxed{\sum P(j) = 1} \text{ (Total probability)}$$
+$$\boxed{\langle j \rangle = \gfrac{\sum jN(j)}{N} = \sum j P(j)} \text{ (Avarage/mean value of $j$)}$$
+$$\boxed{\langle j^2 \rangle = \gfrac{\sum j^2 N(j)}{N} = \sum j^2 P(j)} \text{ (Avarage/mean value of $j^2$)}$$
+$$\boxed{\langle f(j) \rangle = \gfrac{\sum f(j) N(j)}{N} = \sum f(j) P(j)} \text{ (Avarage/mean value of $f(j)$)}$$
+$$\boxed{\sigma_{f(j)} = \langle \Delta f(j) \rangle = \sqrt{\langle f(j)^2 \rangle - \langle f(j) \rangle}} \text{ (SD/Unceritinity of $f(j)$)}$$
+
+\section*{Appendex B: Most Useful Integral}
+$$\boxed{\int^{\infty}_0 x^n e^{\displaystyle -\alpha x^m} dx = \gfrac{1}{m} \alpha^{- \big(\gfrac{n+1}{m}\big)} \Gamma \big(\gfrac{n+1}{m}\big)}$$ \\
+$(\alpha > 0, m > 0, n > -1)$
+$$\boxed{\Gamma(n + 1) = n\Gamma(n) = n!}$$
+$$\boxed{\Gamma\big(\gfrac{1}{2}\big) = \sqrt{\pi}}$$
+
+\end{document}

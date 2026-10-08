@@ -1,0 +1,21 @@
+## Sets of Electrostatics and Electrodynamics
+The idea of making sets are simple, because it's really really hard to maintain big latex files, because it
+can take a lots of time debugging things, and big latex-pdf document can look more like books than the problem sets, so I decide to break those down the chunks, covering all the things, and whole syllabus like this!
+The Plan is making each sets contain 10-15 questions, rather than everything! Let's test with this one!
+
+The Core Maps for Electro Statics:
+
+Concepts Layer:
+- Forumuations of Electro statics
+
+Application Layer:
+- Boundary Value problems
+- Study of Electric Field Inside the Matter
+
+## Electrostatics
+es-set-1.tex Basic Electrostatics Problems
+es-set-2.tex Potential, theories
+es-set-3.tex Potential, problems 01
+es-set-4.tex Elecic Field in matters, therories
+es-set-5.tex 
+es-set-6.tex
